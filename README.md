@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+Got it! Here’s the **README.md content without tables**, fully in text/paragraph format:
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/d3b72af9-d783-4d40-b96c-774f8efef770
+# **SurfAgent — Your AI-Powered Web Navigation Assistant**
 
-## How can I edit this code?
+## **Problem Statement**
 
-There are several ways of editing your application.
+Collecting structured information from the web involves repetitive, manual tasks like searching, clicking, filtering, and copying results. This process is time-consuming, prone to errors, and difficult to automate. Traditional search engines provide raw links or snippets but cannot autonomously perform multi-step actions to deliver clean, structured data tailored to user needs.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d3b72af9-d783-4d40-b96c-774f8efef770) and start prompting.
+## **Detailed Proposal & Prototype Plan**
 
-Changes made via Lovable will be committed automatically to this repo.
+**SurfAgent** is a full-stack AI agent that converts natural-language commands into automated web navigation and data extraction tasks. Users can input queries like:
 
-**Use your preferred IDE**
+> “Search for laptops under 50k and list top 5.”
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The system works in the following way:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. A **local Large Language Model (Ollama + LangChain)** interprets the user command and generates a sequence of browser actions, such as search, click, and data extraction.
+2. **Playwright** executes these actions autonomously, streams progress, captures logs and screenshots.
+3. A **developer-focused dashboard** built with React, Tailwind CSS, and Framer Motion displays the command input, live browser preview, logs, and structured output.
+4. An **exporter module** allows users to save results in JSON or CSV formats.
+5. Optional features include voice commands, memory of past queries, multi-task queuing, and error recovery.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## **Features to be Implemented**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Natural-language command parsing and planning
+* Autonomous web navigation and data scraping
+* Real-time display of logs, browser preview, and structured output
+* Export results as CSV or JSON
+* Optional voice command support
+* Memory for past queries and multi-task queue
+* Error handling and recovery mechanisms
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## **Tech Stack Used**
 
-**Edit a file directly in GitHub**
+* **Frontend:** React, Vite, Tailwind CSS, Framer Motion for a polished dashboard
+* **Backend:** Python and FastAPI for REST and WebSocket endpoints
+* **LLM Integration:** LangChain + Ollama (local) for command interpretation and planning
+* **Browser Automation:** Playwright for executing browser actions and scraping data
+* **Database (optional):** SQLite or MongoDB for storing query history and memory
+* **Voice (optional):** Web Speech API or VOSK for speech-to-text commands
+* **Packaging:** Docker for containerized deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## **Team Contributions**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* **Asritha:** Frontend design, dashboard UI, and Tailwind integration
+* **Sumiyonu:** Backend API development, FastAPI endpoints, WebSocket integration
+* **Raghav:** LangChain + Ollama LLM integration, planning module
+* **Nissi Sharon:** Playwright automation, data extraction, CSV/JSON exporter
+* **Asritha:** Documentation, testing, and coordination
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d3b72af9-d783-4d40-b96c-774f8efef770) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+If you want, I can **also create a shorter, GitHub-friendly version under 200 words** that’s easy to read and looks professional in the repo. Do you want me to do that?
