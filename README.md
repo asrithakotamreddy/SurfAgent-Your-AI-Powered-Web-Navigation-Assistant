@@ -55,9 +55,8 @@ The system works in the following way:
 * **Asritha:** Frontend design, dashboard UI, and Tailwind integration
 * **Sumiyonu:** Backend API development, FastAPI endpoints, WebSocket integration
 * **Raghav:** LangChain + Ollama LLM integration, planning module
-* **Nissi Sharon:** Playwright automation, data extraction, CSV/JSON exporter
-* **Asritha:** Documentation, testing, and coordination
+* **Sandeep:** Playwright automation, data extraction, CSV/JSON exporter
+* **Nissi Sharon:** Documentation, testing, and coordination
 
 ---
 
-If you want, I can **also create a shorter, GitHub-friendly version under 200 words** that’s easy to read and looks professional in the repo. Do you want me to do that?
